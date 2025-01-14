@@ -47,11 +47,10 @@ header .logo {
 }
 
 header .navigation {
-  position: absolute;
-  bottom: 20px;
-  left: 235px;
   display: flex;
   justify-content: space-around;
+  align-items: flex-end;
+  width: 80%;
   gap: 70px;
   text-decoration: none;
   color: #726b6b;
