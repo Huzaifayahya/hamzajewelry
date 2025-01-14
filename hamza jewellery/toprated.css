@@ -1,0 +1,414 @@
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 150px;
+    background-color: #726b6b;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding-bottom: 20px;
+    z-index: 10;
+    transition: 0.8s all ease-in-out;
+  }
+  header.hide {
+    transform: translateY(-150px);
+    transition: transform 0.3s ease;
+  }
+  
+  header .logo {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 80px;
+    width: auto;
+  }
+  
+  header .navigation {
+    position: absolute;
+    bottom: 20px;
+    left: 235px;
+    display: flex;
+    justify-content: space-around;
+    gap: 70px;
+    text-decoration: none;
+    color: #726b6b;
+  }
+  
+  header .navigation a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+  }
+  
+  header .navigation a:hover {
+    background:radial-gradient(rgba(169, 169, 169, 0.075),rgba(211, 211, 211, 0.541)) ;
+    padding: 5px 10px;
+    border-radius: 10px;
+    text-decoration: none;
+  }
+  header .navigation a:active{
+    background:radial-gradient(rgba(211, 211, 211, 0.541),rgba(169, 169, 169, 0.075)) ;
+    padding: 8px 14px;
+    border-radius: 10px;
+    text-decoration: none;
+    border: solid;
+    border-color: #333;
+  }
+  .Rated{
+    background:radial-gradient(rgba(211, 211, 211, 0.541),rgba(169, 169, 169, 0.075)) ;
+    padding: 8px 14px;
+    border-radius: 10px;
+    text-decoration: none;
+    border: solid;
+    border-color: #333;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+  }
+  
+  /* Menu Icon Styling */
+  .menu-container {
+    position: absolute;
+    top: 30px;
+    left: 20px;
+    cursor: pointer;
+    z-index: 1001;
+    display: inline-block;
+  }
+  
+  .menu {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  
+  .line {
+    width: 30px;
+    height: 3px;
+    background-color: #333;
+    transition: all 0.3s ease;
+  }
+  
+  /* Sidebar Styling */
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    background-color: #333;
+    opacity: 80%;
+    padding: 20px;
+    transition: all 0.3s ease;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .sidebar ul {
+    list-style-type: none;
+  }
+  
+  .sidebar li {
+    margin: 20px 0;
+  }
+  
+  .sidebar a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    display: block;
+    padding: 10px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .sidebar a:hover {
+    background-color: #4caf50;
+  }
+  
+  /* Hover Effect to Open Sidebar */
+  .menu-container:hover ~ .sidebar {
+    left: 0;
+  }
+  
+  /* Smooth Transition for Sidebar Opening */
+  .sidebar.open {
+    left: 0;
+  }
+  
+  /* Hover Effect on Menu Icon */
+  .menu-container:hover .line {
+    transform: scaleX(1.2);
+    background-color: #4caf50; /* Change to green on hover */
+  }
+  
+  .menu-container:hover {
+    transform: scale(1.2);
+    background-color: rgba(255, 255, 255, 0.2); /* Background translucent */
+  }
+  /* Logout Box Styling */
+  a.logout-box {
+    display: flex;
+    align-items: center; /* Aligns items vertically in the center */
+    gap: 10px; /* Adds space between the icon and text */
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 30px;
+    text-decoration: none; /* Remove underline from link */
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Icon Styling */
+  .logout-box i {
+    font-size: 24px; /* Icon size */
+  }
+  
+  /* Text Styling */
+  .logout-box .logout-text {
+    font-size: 16px; /* Text size smaller than icon */
+  }
+  
+  /* Hover Effect for Logout Box */
+  a.logout-box:hover {
+    background-color: #4caf50; /* Change background color on hover */
+  }
+  .profile:hover{
+    box-sizing: border-box;
+    background-color: #7a7a7a;border-radius: 50%;
+  }
+  .Wishlist:hover{
+    background-color: #7a7a7a;border-radius: 50%;
+  }
+  .Cart:hover{
+    background-color: #7a7a7a;border-radius: 50%;
+  }
+/* Body */
+body {
+    font-family: Arial, sans-serif;
+    background-image: url(background3.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.h1{
+  height: 40px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  margin-bottom: 5px;
+  box-sizing: border-box;
+  background-color: #726b6b;opacity: 90%;
+  border-radius: 5px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bolder;
+  text-align: center;
+}
+.headline{
+  height: 40px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  margin-bottom: 30px;
+  box-sizing: border-box;
+  background-color: #313030;opacity: 90%;
+  border-radius: 5px;
+  color: white;
+  overflow:visible;
+  
+}
+.headline .p{
+  font-family: serif;
+  font-size: large;
+  font-weight: bolder;
+  text-align: left;
+  position: relative;top: 8px;left: 18px;
+  word-spacing: 20px;
+  animation-delay: 0s;
+  animation-timing-function: linear;
+  animation-direction: alternate;
+  animation-fill-mode:both;
+  animation-duration: 4s;
+  animation: slide 25s infinite linear forwards;
+}
+@keyframes slide {
+  0%{transform: translateX(100%);}
+  100%{transform: translateX(-100%);}
+}
+.product{
+    height: 350px;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 15px;
+    margin-bottom: 30px;
+    box-sizing: border-box;
+    background-color: #726b6b;opacity: 90%;
+    border-radius: 15px;
+}
+.product:hover{
+    height: 370px;
+    margin-left: 80px;
+    margin-right: 80px;
+    margin-top: 15px;
+    margin-bottom: 30px;
+    box-sizing: border-box;
+    background-color: #8d8888;opacity: 90%;
+    border-radius: 15px;
+    transform: scale(1.1em);
+    transition-timing-function: all ease-in-out;
+    transition-duration: 0.6s;
+    transition-delay: 0s ;
+    cursor: pointer;
+}
+.product:not(:hover){
+    transition: all 0.6s ease-in-out;
+}
+.product-img{
+    height: 250px;
+    width: 250px;
+    margin-top: 50px;
+    margin-left: 30px;
+    border-radius: 20px;opacity: 90%;
+    cursor: pointer;
+}
+.Description{
+    position: relative;
+    color: black;
+    position: relative;
+    font-family: sans-serif;
+    cursor: pointer;
+
+}
+.h2{
+    position: relative;
+    left: 430px;
+    bottom: 280px;
+    font-weight: bolder;
+    font-size: 28px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.SKU{
+  position: relative;
+  left: 430px;
+  bottom: 320px;
+
+ }
+ .instock{
+  position: relative;
+  left: 430px;
+  bottom: 320px;
+  font-family: sans-serif;
+    font-size: small;
+ }
+ .price{
+  display: flex;
+    gap: 40px;
+    text-decoration: none;
+    font-family: "Audiowide", sans-serif;
+    font-size: 25px;
+    position: relative;
+    left: 350px;
+    bottom: 320px;
+ }
+ .off{
+  display: inline-block;
+  padding: 0px 30px 0px 30px;
+  font-weight: bold;
+  font-family: serif;
+  font-size: 20px;
+  border: solid red;
+  background-color: red;
+  color: white;
+  border-radius: 30px;
+  position: relative;
+  left: 420px;
+  bottom: 350px;
+ }
+ .quantity{
+  font-family: serif;
+  font-size: medium;
+  position: relative;
+  left: 430px;
+  bottom: 370px;
+ }
+ .quantity-box{
+    
+  font-family: serif;
+  font-size: medium;
+  position: relative;
+  left: 430px;
+  bottom: 380px;
+ }
+ .quantity-box button{
+  border-radius: 50%;
+  text-align: center;
+  padding: 0px 5px 0px 5px;
+  text-decoration: none;
+}
+.quantity-box input{
+  border-radius: 50px;
+  padding: 8px 0px 8px 0px;
+  text-align: center;
+  margin: 2px;
+}
+.addtocart{
+  position: relative;
+  font-family: serif;
+  box-sizing: border-box;
+  border: solid rgb(27, 179, 27);
+  left: 680px;
+  bottom: 430px;
+  padding: 8px 80px 8px 80px;
+  border-radius: 40px;
+  background-color: rgb(27, 179, 27);
+  color: white;
+  margin: 10px;
+  cursor: pointer;
+}
+.addtocart:hover{
+  font-size: 16px;
+  font-weight: bold;
+  zoom: 1.1em;
+}
+/* Customer Reviews */
+.reviews{
+    background-color:  rgb(224, 221, 221);opacity: 90%;
+    color: black;
+  }
+  
+  /* Footer Section */
+  footer {
+    background: rgba(0, 0, 0, 0.9);
+    display: flex;
+    justify-content: space-around;
+    padding: 40px 0;
+  }
+  
+  footer h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  footer ul {
+    list-style: none;
+  }
+  
+  footer ul li {
+    margin: 10px 0;
+  }
+  
+  footer ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  footer ul li a:hover {
+    color: #ffd700;
+  }
+  
