@@ -1,0 +1,61 @@
+
+.background{
+    
+  background-image: url(background\.jpg);
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: blur(20px);
+  border: solid;
+  border-radius: 5%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  width: 60%;
+  height: 600px;
+  width: 100%;
+  object-fit: cover;
+  z-index: -1;
+  justify-content: center;  
+}
+.container{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  width: 60%;
+  height: 500px;
+  object-fit: cover;
+  z-index: 50;
+  justify-content: center;
+  color: white;
+  justify-content: space-around;
+  gap: 70px;
+
+}
+header{
+  height: 200px;
+  width: 100%;
+  background: transparent;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 20px;
+}
+.h2{
+  position: relative;bottom: 150px;
+  font-size: 30px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.content{
+  position: relative;bottom: 100px;
+  font-size: larger;
+  font-style: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.signin{
+  position: relative;bottom: 130px;
+  size: 60px;
+  width: 60px;
+}

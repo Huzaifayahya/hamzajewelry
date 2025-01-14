@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hamza Jewellery</title>
+    <link rel="stylesheet" href="product1.css" />
+  </head>
+  <body>
+    <!-- Sticky Header -->
+    <header id="header" style="position: sticky;">
+        <!-- Menu icon for sidebar trigger -->
+        <div class="menu-container" id="menu-container">
+          <div class="menu">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+          </div>
+        </div>
+  
+        <!-- Sidebar -->
+        <aside class="sidebar" id="sidebar">
+          <ul>
+            <li><a href="#"> Manage my acoount</a></li>
+            <li><a href="#"> My Orders</a></li>
+            <li><a href="#">&#x2665; My Wishlist & followed store</a></li>
+            <li><a href="#">&#9734; My reviews</a></li>
+            <li><a href="#">&#9447; My Return & cancellation</a></li>
+            <li><a href="#">&#129309; Help center</a></li>
+            <li> <!-- Clickable Logout Box -->
+              <a href="logout-page.html" class="logout-box">
+                  <i class="fas fa-sign-out-alt"><?xml version="1.0" ?><svg height="32" viewBox="0 0 32 32" width="32" xmlns="http://www.w3.org/2000/svg"><title/><g data-name="1" id="_1"><path d="M27,3V29a1,1,0,0,1-1,1H6a1,1,0,0,1-1-1V27H7v1H25V4H7V7H5V3A1,1,0,0,1,6,2H26A1,1,0,0,1,27,3ZM10.71,20.29,7.41,17H18V15H7.41l3.3-3.29L9.29,10.29l-5,5a1,1,0,0,0,0,1.42l5,5Z" id="logout_account_exit_door"/></g></svg></i> <!-- Logout icon -->
+                  <span class="logout-text">Logout</span>
+              </a>
+            </li> 
+          </ul>
+        </aside>
+        
+        <img src="hamzajewellery2.png" alt="Hamza Jewellery" class="logo"/><br>
+          <ul class="navigation" style="text-decoration: none;">
+            <li ><a href="hamzajewellery.html" class="home">Home</a></li>
+            <li ><a href="#" class="Selling">Top Sellings</a></li>
+            <li ><a href="#" class="Rated">Top Rated</a></li>
+            <li ><a href="#" class="Womens">Womens</a></li>
+            <li ><a href="#" class="Men">Men</a></li>
+            <li ><a href="#" class="Contact">Contact us</a></li>
+            <li ><a href="#" class="About">About us</a></li>
+          </ul>
+        </header>
+        <main>
+        <p class="direction"><a href="hamzajewellery.html">Home     </a>&#x2192;
+                             <a href="#">Womens     </a>&#x2192;
+                             <a href="#">Product1     </a>
+        </p>
+          <section style="height: 700px;width: 100%;"><!-- Main image -->
+          <div class="main-image"><img src="8a.jpeg" alt="Cartier Handcuff" class="Product1" title="Cartier Handcuff" ></div>
+          <p><h1 class="name">Love and Nail Cartier handcuff</h1></p><br><br>
+          <p  class="SKU"><strong>SKU#</strong>G-HN-24-409001 -P</p>
+          <p class="instock">In stock</p>
+          <ul class="price"><ul><del style="color: rgba(104, 100, 100, 0.87);"><strong>PKR</strong> 1,999</del></ul>   <ul style="color: rgb(250, 21, 21);"><strong>PKR</strong> 1,399</ul></ul>
+          <p class="off">30% OFF</p>
+          <p class="freeshipping">&#10024; Free Shipping ..!</p>
+          <p class="Love">&#x1F495; LOVE It or Return It !</p>
+          <p class="quantity">Quantity</p>
+          <div class="quantity-box">
+            <button class="minus">-</button>
+            <input type="number" id="quantity" value="1" />
+            <button class="plus">+</button>
+          </div>
+          <button class="addtocart">ADD TO CART</button>
+          <button class="shopnow">Shop Now</button></section>
+          
+          <!-- Thumbnail images -->
+          <section><div class="thumbnails">
+            <img src="8a.jpeg" alt="Thumbnail 1" class="Thumbnail-1" onclick="changeMainImage(this.src)">
+            <img src="8b.jpeg" alt="Thumbnail 2" class="Thumbnail-2" onclick="changeMainImage(this.src)">
+            <img src="8c.jpeg" alt="Thumbnail 3" class="Thumbnail-3" onclick="changeMainImage(this.src)">
+            <!-- Add more thumbnails here -->
+          </div></section>
+          <hr style="position: relative;top: 5px;">
+          <hr style="position: relative;top: 1280px;">
+
+          <div style="height: 1300px;color: black;"><section class="Description">
+            <h1 style="color: black;font-family: sans-serif;margin-left: 80px;margin-top: 30px;">Product details for Love and Nail Cartier handcuff</h1>
+            <ul style="font-weight: 100;margin-left: 100px;margin-top: 20px;gap: 10px;margin-bottom: 30px;">
+              <li style="margin-bottom: 10px;">Made from high-quality stainless steel.</li>
+              <li style="margin-bottom: 10px;">Elegant gold-plated finish for a luxurious look.</li>
+              <li style="margin-bottom: 10px;">Best-selling and most demanding design.</li>
+              <li style="margin-bottom: 10px;">Sets of two matching fashion bangles.</li>
+              <li style="margin-bottom: 10px;">Perfect for girls and women's fashion.</li>
+              <li style="margin-bottom: 10px;">Water-proof for everyday wear.</li>
+              <li style="margin-bottom: 10px;">Rust-proof, ensuring long-lasting shine.</li>
+              <li style="margin-bottom: 10px;">Handcuff-style closure for a secure fit.</li>
+              <li style="margin-bottom: 10px;">Suitable for casual and formal occasions.</li>
+            </ul>
+            <div style="display: flex;">
+            <img src="8b.jpeg" alt="" style="height: 300px;display: inline-block;margin: 50px;margin-left: 100px;">
+            <img src="8c.jpeg" alt="" style="height: 300px;display: inline-block;margin: 50px;margin-left: 100px;">
+            </div>
+            <h2 style="margin-left: 80px;margin-bottom: 30px;">Best Selling Most Demanding Stainless Steel Gold Bracelet Sets for Girls</h2>
+            <p style="margin-left: 90px;margin-bottom:70px ;">Discover the elegance and sophistication of our best-selling stainless steel gold bracelet sets, specially crafted for girls. <br>
+               These sets combine modern style with timeless appeal, making them a popular choice among fashion enthusiasts. <br>
+               Made from high-quality stainless steel with a lustrous gold finish, they add a touch of luxury to any wardrobe.</p>
+
+            <h2  style="margin-left: 80px;margin-bottom: 30px;">Sets of Two Fashion Bangles for Women</h2>  
+            <p style="margin-left: 90px;margin-bottom: 70px ;">
+              This set includes two beautifully designed bangles that complement each other perfectly. Each bangle is meticulously crafted to stand out on <br>
+              its own or when worn together, providing versatility to mix and match according to different outfits and occasions. <br>
+              Perfect for those who love to layer their jewelry or keep it simple with a single, standout piece.
+            </p> 
+            <h2 style="margin-left: 80px;margin-bottom: 30px;">Water & Rust Proof Women Fashion Handcuff</h2>
+            <p style="margin-left: 90px;margin-bottom: 70px ;">
+              Our bracelet sets are not only stylish but also highly durable. Featuring water and rust-proof properties, they are designed to withstand daily wear <br>
+              and tear while maintaining their shine and beauty. The handcuff-style closure ensures a secure and comfortable fit, making these bracelets perfect <br>
+              for everyday wear without the worry of tarnishing or fading.
+            </p>
+          </section></div><br>
+          <section class="products-section" id="top-selling" style="margin-bottom: 100px;">
+            <h2>Products You May Know</h2>
+            <div class="product">
+              <img src="21c.jpeg" alt="Product 3" />
+              <div class="product-info">
+                <h3>Product 1</h3>
+                <p style="margin-top: 10px;"><del style="color: rgba(255, 0, 0, 0.884);margin-right: 20px;">PKR399</del>PKR249</p>
+              </div>
+            </div>
+            <div class="product">
+              <img src="25a.jpeg" alt="Product 4" />
+              <div class="product-info">
+                <h3>Product 2</h3>
+                <p style="margin-top: 10px;"><del style="color: rgba(255, 0, 0, 0.884);margin-right: 20px;">PKR799</del>PKR499</p>
+              </div>
+            </div>
+            <div class="product">
+              <img src="13b.jpeg" alt="Product 3"/>
+              <div class="product-info">
+                <h3>Product 3</h3>
+                <p style="margin-top: 10px;"><del style="color: rgba(255, 0, 0, 0.884);margin-right: 20px;">PKR749</del>PKR499</p>
+              </div>
+            </div>
+            <div class="product">
+              <img src="30b.jpeg" alt="Product 4" />
+              <div class="product-info">
+                <h3>Product 4</h3>
+                <p style="margin-top: 10px;"><del style="color: rgba(255, 0, 0, 0.884);margin-right: 20px;">PKR899</del>PKR699</p>
+              </div>
+            </div>
+      
+            <br><br><br><br><br>
+            <div class="product">
+              <img src="10c.jpeg" alt="Product 3" />
+              <div class="product-info">
+                <h3>Product 5</h3>
+                <p style="margin-top: 10px;"><del style="color: rgba(255, 0, 0, 0.884);margin-right: 20px;">PKR499</del>PKR299</p>
+              </div>
+            </div>
+            <div class="product">
+              <img src="35b.jpeg" alt="Product 4" />
+              <div class="product-info">
+                <h3>Product 6</h3>
+                <p style="margin-top: 10px;"><del style="color: rgba(255, 0, 0, 0.884);margin-right: 20px;">PKR899</del>PKR599</p>
+              </div>
+            </div>
+            <div class="product">
+              <img src="22b.jpeg" alt="Product 3"/>
+              <div class="product-info">
+                <h3>Product 7</h3>
+                <p style="margin-top: 10px;"><del style="color: rgba(255, 0, 0, 0.884);margin-right: 20px;">PKR699</del>PKR399</p>
+              </div>
+            </div>
+            <div class="product">
+              <img src="31a.jpeg" alt="Product 4" />
+              <div class="product-info">
+                <h3>Product 8</h3>
+                <p style="margin-top: 10px;"><del style="color: rgba(255, 0, 0, 0.884);margin-right: 20px;">PKR1299</del>PKR799</p>
+              </div>
+            </div></section>
+
+          <section class="reviews">
+            <table style="height: 300px;width: 100%;text-align: center;">
+              <h2 style="text-align: center;font-family: sans-serif;margin: 60px;">Customer Reviews</h2>
+            <tr>
+              <td><img src="profile.png" alt="profile" style="height: 50px;width: auto;"></td>
+              <td><img src="profile.png" alt="profile" style="height: 50px;width: auto;"></td>
+              <td><img src="profile.png" alt="profile" style="height: 50px;width: auto;"></td>
+              <td><img src="profile.png" alt="profile" style="height: 50px;width: auto;"></td>
+              <td><img src="profile.png" alt="profile" style="height: 50px;width: auto;"></td>
+            </tr>
+              <tr>
+              <td><strong>Sonia khan</strong></td>
+              <td><strong>Marium zubair</strong></td>
+              <td><strong>Mohsin shaikh</strong></td>
+              <td><strong>Pretty Queen</strong></td>
+              <td><strong>Maryam</strong></td>
+            </tr>
+            <tr>
+              <td>"Nice product!"</td>
+              <td>"Fully satisfied!"</td>
+              <td>"Maa-Shaa-Allah <br> Best collection"</td>
+              <td>"Parcel received,<br>sb perfect hai"</td>
+              <td>"Great service,<br>and receivedon time"</td>
+            </tr>
+            <tr>
+              <td>⭐⭐⭐⭐⭐</td>
+              <td>⭐⭐⭐⭐⭐</td>
+              <td>⭐⭐⭐⭐<span style="color: rgb(248, 210, 42);font-size: 23px;position: relative;top: 3px;">⯪ </span></td>
+              <td>⭐⭐⭐⭐<span style="color: rgb(248, 210, 42);font-size: 23px;position: relative;top: 3px;">⯪</span></td>
+              <td>⭐⭐⭐⭐⭐</td>
+            </tr>
+            </table>
+          
+        </main>
+        <!-- Footer Section -->
+    <footer style="height: 350px;">
+      <div class="footer-column">
+        <h3>Top Categories</h3>
+        <ul>
+          <li><a href="#">Earrings</a></li>
+          <li><a href="#">Rings</a></li>
+          <li><a href="#">Necklaces</a></li>
+          <li><a href="#">Bracelets</a></li>
+          <li><a href="#">pendants</a></li>
+          <li><a href="#">Hair accessories</a></li>
+          <li><a href="#">Flat 30% OFF</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h3>Our Policies</h3>
+        <ul>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Shipping Policy</a></li>
+          <li><a href="#">Refund Policy</a></li>
+          <li><a href="#">Terms of service</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">FAQ's</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h3>Contact Us</h3>
+        <ul>
+          <li><a href="#"><strong>Call</strong> +92 335 2490549</a></li>
+          <li><a href="#"><strong>Email:</strong><br>Huzaifayahya2007@gmail.com</a></li>
+          <li><a href="#"><strong>Address:</strong>
+            <br>Shop no UG#41,<br>Gold Mark Shopping Mall 1,<br>DHA phase 1,Karachi</a></li>
+        </ul>
+      </div>
+    </footer>
+
+
+    <script src="product.js"></script>
+  </body>

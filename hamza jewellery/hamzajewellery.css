@@ -1,0 +1,394 @@
+/* Reset styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body */
+body {
+  font-family: Arial, sans-serif;
+  background-image: url(background3.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  /*background-color: #121212;*/
+  color: #fff;
+  overflow-x: hidden;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 150px;
+  background-color: #726b6b;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding-bottom: 20px;
+  z-index: 10;
+  transition: 0.8s all ease-in-out;
+}
+header.hide {
+  transform: translateY(-150px);
+  transition: transform 0.3s ease;
+}
+
+header .logo {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 80px;
+  width: auto;
+}
+
+header .navigation {
+  position: absolute;
+  bottom: 20px;
+  left: 235px;
+  display: flex;
+  justify-content: space-around;
+  gap: 70px;
+  text-decoration: none;
+  color: #726b6b;
+}
+
+header .navigation a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+header .navigation a:hover {
+  background:radial-gradient(rgba(169, 169, 169, 0.075),rgba(211, 211, 211, 0.541)) ;
+  padding: 5px 10px;
+  border-radius: 10px;
+  text-decoration: none;
+}
+header .navigation a:active{
+  background:radial-gradient(rgba(211, 211, 211, 0.541),rgba(169, 169, 169, 0.075)) ;
+  padding: 8px 14px;
+  border-radius: 10px;
+  text-decoration: none;
+  border: solid;
+  border-color: #333;
+}
+.home{
+  background:radial-gradient(rgba(211, 211, 211, 0.541),rgba(169, 169, 169, 0.075)) ;
+  padding: 8px 14px;
+  border-radius: 10px;
+  text-decoration: none;
+  border: solid;
+  border-color: #333;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  overflow-x: hidden;
+}
+
+/* Menu Icon Styling */
+.menu-container {
+  position: absolute;
+  top: 30px;
+  left: 20px;
+  cursor: pointer;
+  z-index: 1001;
+  display: inline-block;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.line {
+  width: 30px;
+  height: 3px;
+  background-color: #333;
+  transition: all 0.3s ease;
+}
+
+/* Sidebar Styling */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -250px;
+  width: 250px;
+  height: 100%;
+  background-color: #333;
+  opacity: 80%;
+  padding: 20px;
+  transition: all 0.3s ease;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar ul {
+  list-style-type: none;
+}
+
+.sidebar li {
+  margin: 20px 0;
+}
+
+.sidebar a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  display: block;
+  padding: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.sidebar a:hover {
+  background-color: #4caf50;
+}
+
+/* Hover Effect to Open Sidebar */
+.menu-container:hover ~ .sidebar {
+  left: 0;
+}
+
+/* Smooth Transition for Sidebar Opening */
+.sidebar.open {
+  left: 0;
+}
+
+/* Hover Effect on Menu Icon */
+.menu-container:hover .line {
+  transform: scaleX(1.2);
+  background-color: #4caf50; /* Change to green on hover */
+}
+
+.menu-container:hover {
+  transform: scale(1.2);
+  background-color: rgba(255, 255, 255, 0.2); /* Background translucent */
+}
+/* Logout Box Styling */
+a.logout-box {
+  display: flex;
+  align-items: center; /* Aligns items vertically in the center */
+  gap: 10px; /* Adds space between the icon and text */
+  background-color: #333;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 30px;
+  text-decoration: none; /* Remove underline from link */
+  transition: background-color 0.3s ease;
+}
+
+/* Icon Styling */
+.logout-box i {
+  font-size: 24px; /* Icon size */
+}
+
+/* Text Styling */
+.logout-box .logout-text {
+  font-size: 16px; /* Text size smaller than icon */
+}
+
+/* Hover Effect for Logout Box */
+a.logout-box:hover {
+  background-color: #4caf50; /* Change background color on hover */
+}
+.profile:hover{
+  box-sizing: border-box;
+  background-color: #7a7a7a;border-radius: 50%;
+}
+.Wishlist:hover{
+  background-color: #7a7a7a;border-radius: 50%;
+}
+.Cart:hover{
+  background-color: #7a7a7a;border-radius: 50%;
+}
+
+/* Background Video */
+.background-video video {
+  position: static;
+  top: 20px;
+  left: 0;
+  width: 100%;
+  height: 550px;
+  object-fit: cover;
+  z-index: -1;
+  border-radius: 20px;
+  margin-bottom: 80px;
+}
+
+/* Products Section */
+.products-section {
+  margin-top: 20px;
+  height: 1000px;
+  text-align: left;
+  padding: 40px 0;
+  margin-left: 4%;
+  margin-right: 4%;
+  justify-content: center;
+  box-sizing: border-box;
+  background-color: #726b6b;opacity: 90%;
+  border-radius: 15px;
+}
+
+.products-section h2 {
+  margin-left: 40px;
+  font-size: 36px;
+  margin-bottom: 90px;
+}
+
+.product {
+  position: relative;
+  height: 350px;
+  width: 22%;
+  margin: 10px;
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+.product img {
+  border-radius: 10px;
+  overflow: hidden;
+  border: 2px solid #444;
+  width: 100%;
+  transition: transform 0.3s ease;
+}
+
+.product:hover img {
+  transform: scale(1.2);
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+}
+.product:active img{
+  border: 10px 20px 10px 20px blue;opacity: 70%;
+  cursor: pointer;
+  transition: 0.4s all ease-in-out;
+}
+
+.product-info {
+  position: absolute;
+  top: 300px;
+  left: 50px;
+  color: white;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+
+.product-info h3 {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.product-info p {
+  font-size: 16px;
+}
+
+/* Hover Icons */
+.product:hover .product-info {
+  background: rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+
+.product .product-info::after {
+  /*content: "➕";*/
+  position: absolute;
+  bottom: 5px;
+  right: 10px;
+  color: #ffd700;
+}
+.fashionwomen{
+  height: 600px;
+  width: 80%;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: #726b6b;opacity: 90%;
+  border-radius: 20px;
+  background-size: cover;
+  display: flex;
+  justify-self: center;
+  margin-bottom: 100px;
+  cursor: pointer;
+}
+
+.fashionwomenvideo{
+  border-radius: 40px;
+}
+.fashionwomen:hover{
+  transform: scale(1.1);
+  transition-timing-function: ease-in-out;
+  transition-duration: 0.6s;
+  cursor: pointer;
+}
+.fashionwomen:active{
+  transform: scale(0.95);
+  background-color: #384261;opacity: 100%;
+}
+
+.fashionmen{
+  height: 600px;
+  width: 80%;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: #726b6b;opacity: 90%;
+  border-radius: 20px;
+  background-size: cover;
+  display: flex;
+  justify-self: center;
+  margin-bottom: 100px;
+  cursor: pointer;
+}
+
+.fashionwomenvideo{
+  border-radius: 40px;
+}
+.fashionmen:hover{
+  transform: scale(1.1);
+  transition: 0.6s all ease-in-out;
+  cursor: pointer;
+}
+.fashionmen:active{
+  transform: scale(0.95);
+  background-color: #384261;opacity: 100%;
+}
+
+/* Customer Reviews */
+.reviews{
+  background-color:  rgb(224, 221, 221);opacity: 90%;
+  color: black;
+}
+
+/* Footer Section */
+footer {
+  background: rgba(0, 0, 0, 0.9);
+  display: flex;
+  justify-content: space-around;
+  padding: 40px 0;
+}
+
+footer h3 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+footer ul {
+  list-style: none;
+}
+
+footer ul li {
+  margin: 10px 0;
+}
+
+footer ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+footer ul li a:hover {
+  color: #ffd700;
+}

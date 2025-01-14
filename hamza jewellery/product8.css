@@ -1,0 +1,501 @@
+/* Reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body */
+  body {
+    font-family: Arial, sans-serif;
+    background: white;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  
+    /*background-color: #121212;*/
+    color: #fff;
+    overflow-x: hidden;
+  }
+  
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 150px;
+    background-color: #726b6b;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding-bottom: 20px;
+    z-index: 10;
+    transition: 0.6s all ease-in-out;
+  }
+  header.hide {
+    transform: translateY(-150px);
+    transition: transform 0.3s ease;
+  }
+  
+  header .logo {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 80px;
+    width: auto;
+  }
+  
+  header .navigation {
+    position: absolute;
+    bottom: 20px;
+    left: 235px;
+    display: flex;
+    justify-content: space-around;
+    gap: 70px;
+    text-decoration: none;
+    color: #726b6b;
+  }
+  
+  header .navigation a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+  }
+  
+  header .navigation a:hover {
+    background:radial-gradient(rgba(169, 169, 169, 0.075),rgba(211, 211, 211, 0.541)) ;
+    padding: 5px 10px;
+    border-radius: 10px;
+    text-decoration: none;
+  }
+  header .navigation a:active{
+    background:radial-gradient(rgba(211, 211, 211, 0.541),rgba(169, 169, 169, 0.075)) ;
+    padding: 8px 14px;
+    border-radius: 10px;
+    text-decoration: none;
+    border: solid;
+    border-color: #333;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+  }
+  
+  /* Menu Icon Styling */
+  .menu-container {
+    position: absolute;
+    top: 30px;
+    left: 20px;
+    cursor: pointer;
+    z-index: 1001;
+    display: inline-block;
+  }
+  
+  .menu {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  
+  .line {
+    width: 30px;
+    height: 3px;
+    background-color: #333;
+    transition: all 0.3s ease;
+  }
+  
+  /* Sidebar Styling */
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    background-color: #333;
+    opacity: 80%;
+    padding: 20px;
+    transition: all 0.3s ease;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .sidebar ul {
+    list-style-type: none;
+  }
+  
+  .sidebar li {
+    margin: 20px 0;
+  }
+  
+  .sidebar a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    display: block;
+    padding: 10px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .sidebar a:hover {
+    background-color: #4caf50;
+  }
+  
+  /* Hover Effect to Open Sidebar */
+  .menu-container:hover ~ .sidebar {
+    left: 0;
+  }
+  
+  /* Smooth Transition for Sidebar Opening */
+  .sidebar.open {
+    left: 0;
+  }
+  
+  /* Hover Effect on Menu Icon */
+  .menu-container:hover .line {
+    transform: scaleX(1.2);
+    background-color: #4caf50; /* Change to green on hover */
+  }
+  
+  .menu-container:hover {
+    transform: scale(1.2);
+    background-color: rgba(255, 255, 255, 0.2); /* Background translucent */
+  }
+  /* Logout Box Styling */
+  a.logout-box {
+    display: flex;
+    align-items: center; /* Aligns items vertically in the center */
+    gap: 10px; /* Adds space between the icon and text */
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 30px;
+    text-decoration: none; /* Remove underline from link */
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Icon Styling */
+  .logout-box i {
+    font-size: 24px; /* Icon size */
+  }
+  
+  /* Text Styling */
+  .logout-box .logout-text {
+    font-size: 16px; /* Text size smaller than icon */
+  }
+  
+  /* Hover Effect for Logout Box */
+  a.logout-box:hover {
+    background-color: #4caf50; /* Change background color on hover */
+  }
+  .direction{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 16px;
+    margin-top: 20px;
+    margin-left: 50px;
+    
+  }
+  .direction a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 16px;
+    text-shadow: #333;
+    margin: 20px;
+  }
+  .direction a:hover{
+    text-decoration: none;
+    color: blue;
+    font-size: 18px;
+
+  }
+
+  .Product1{
+    display: inline-block;
+    height: 470px;
+    width: auto;
+    position: absolute;
+    top: 220px;
+    left: 60px;
+    border-radius: 10px;
+  }
+  .name{
+    font-weight: bold;
+    font-family: serif;
+    position: absolute;
+    left: 600px;
+    top: 240px;
+    color: black;
+    font-size: 30px;
+  }
+  .SKU{
+    position: absolute;
+    color: black;
+    left: 600px;
+    top: 325px;
+  }
+  .instock{
+    position: absolute;
+    color: black;
+    left: 600px;
+    top: 365px;
+    font-family: sans-serif;
+    font-size: small;
+  }
+  .price{
+    display: flex;
+    gap: 40px;
+    text-decoration: none;
+    font-family: "Audiowide", sans-serif;
+    position: absolute;
+    color: black;
+    left: 610px;
+    top: 410px;
+    font-size: 25px;
+
+  }
+  .off{
+    padding: 0px 30px 0px 30px;
+    font-weight: bold;
+    font-family: serif;
+    font-size: 20px;
+    position: absolute;
+    left: 600px;
+    top: 460px;
+    border: solid red;
+    background-color: red;
+    color: white;
+    border-radius: 30px;
+  }
+  .freeshipping{
+    font-weight: bold;
+    font-family: serif;
+    font-size: 20px;
+    position: absolute;
+    left: 600px;
+    top: 530px;
+    color: rgb(77, 75, 75);
+  }
+  .Love{
+    font-weight: bold;
+    font-family: serif;
+    font-size: 22px;
+    position: absolute;
+    left: 605px;
+    top: 580px;
+    color: rgb(77, 75, 75);
+  }
+  .quantity{
+    font-family: serif;
+    font-size: medium;
+    position: absolute;
+    left: 600px;
+    top: 620px;
+    color: rgb(56, 53, 53);
+  }
+  .quantity-box{
+    
+    font-family: serif;
+    font-size: medium;
+    position: absolute;
+    left: 600px;
+    top: 645px;
+    color: rgb(56, 53, 53);
+  }
+  .quantity-box button{
+    border-radius: 50%;
+    text-align: center;
+    padding: 0px 5px 0px 5px;
+    text-decoration: none;
+  }
+  .quantity-box input{
+    border-radius: 50px;
+    padding: 8px 2px 8px 2px;
+    text-align: center;
+    margin: 2px;
+  }
+  .addtocart{
+    position: absolute;
+    font-family: serif;
+    box-sizing: border-box;
+    border: solid rgb(27, 179, 27);
+    left: 700px;
+    top: 690px;
+    padding: 14px 150px 14px 150px;
+    border-radius: 40px;
+    background-color: rgb(27, 179, 27);
+    color: white;
+    margin: 10px;
+    cursor: pointer;
+  }
+  .addtocart:hover{
+    font-size: 16px;
+    font-weight: bold;
+    zoom: 1.1em;
+  }
+  .shopnow{
+    position: absolute;
+    font-family: serif;
+    font-weight: bold;
+    box-sizing: border-box;
+    border: solid black;
+    left: 700px;
+    top: 750px;
+    padding: 14px 164px 14px 164px;
+    border-radius: 40px;
+    background-color: white;
+    color: black;
+    margin: 10px;
+    cursor: pointer;
+  }
+  .shopnow:hover{
+    font-size: 16px;
+    font-weight: bold;
+    zoom: 1.1em;
+  }
+  .thumbnails{
+    position: absolute;
+    display: flex;
+    height: 100px;
+    width: auto;
+    top: 710px;
+    left: 60px;
+    gap: 20px;
+    cursor: pointer;
+
+  }
+  .thumbnails img{
+  border-radius: 10px;
+  border: 3px solid #ccc;
+  transition: border 0.5s;
+
+}
+.thumbnails .Thumbnail-1 {
+  border: 5px solid #666;
+  height: 110px;
+
+}
+.Description{
+  position: absolute;top: 900px;
+  font-weight: bolder;
+}
+/* Products Section */
+.products-section {
+  margin-top: 20px;
+  height: 1000px;
+  text-align: left;
+  padding: 40px 0;
+  margin-left: 40px;
+  margin-right: 40px;
+  box-sizing: border-box;
+  background-color: #726b6b;opacity: 90%;
+  border-radius: 15px;
+}
+
+.products-section h2 {
+  margin-left: 40px;
+  font-size: 36px;
+  margin-bottom: 90px;
+  color: black;
+}
+
+.product {
+  position: relative;
+  height: 350px;
+  width: 22%;
+  margin: 10px;
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+.product img {
+  border-radius: 10px;
+  overflow: hidden;
+  border: 2px solid #444;
+  width: 100%;
+  transition: transform 0.3s ease;
+}
+
+.product:hover img {
+  transform: scale(1.2);
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+}
+.product:active img{
+  border: 10px 20px 10px 20px blue;opacity: 70%;
+  cursor: pointer;
+  transition: 0.4s all ease-in-out;
+}
+
+.product-info {
+  position: absolute;
+  top: 300px;
+  left: 50px;
+  color: white;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+
+.product-info h3 {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.product-info p {
+  font-size: 16px;
+}
+
+/* Hover Icons */
+.product:hover .product-info {
+  background: rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+
+.product .product-info::after {
+  /*content: "➕";*/
+  position: absolute;
+  bottom: 5px;
+  right: 10px;
+  color: #ffd700;
+}
+
+/* Customer Reviews */
+.reviews{
+  background-color:  rgb(224, 221, 221);opacity: 90%;
+  color: black;
+}
+/* Footer Section */
+footer {
+  background: rgba(0, 0, 0, 0.9);
+  display: flex;
+  justify-content: space-around;
+  padding: 40px 0;
+}
+
+footer h3 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+footer ul {
+  list-style: none;
+}
+
+footer ul li {
+  margin: 10px 0;
+}
+
+footer ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+footer ul li a:hover {
+  color: #ffd700;
+}
+
