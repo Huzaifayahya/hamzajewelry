@@ -1,0 +1,32 @@
+.home{
+    background-image: url(home.png);
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: blur(20px);
+  border: solid;
+  border-radius: 5%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  width: 60%;
+  height: 1300px;
+  width: 100%;
+  object-fit: cover;
+  z-index: -50;
+  justify-content: center;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    width: 650px;
+    border: solid;
+    border: black;
+    color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;opacity: 100%;
+    background-color: rgb(150, 104, 59); opacity: 85%; filter: blur(20%);
+
+}
