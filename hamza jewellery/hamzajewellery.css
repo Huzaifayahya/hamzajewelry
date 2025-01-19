@@ -27,13 +27,33 @@ header {
   z-index: 10;
   transition: 0.8s all ease-in-out;
 }
-@media only screen and (min-width:200px) and (max-width:426){
+@media only screen and (min-width:200px) and (max-width:375px){
   header{
-    flex-wrap: wrap;
-    flex-shrink: 1;
-    flex-grow: 1;
+    height: 200px;
+    width: 740px;
   }
-  
+}
+@media only screen and (min-width:375px) and (max-width:430px){
+  header{
+    height: 190px;
+    width: 780px;
+  }
+}
+@media only screen and (min-width:450px) and (max-width:768px){
+  header{
+    width: 770px;
+  }
+}
+@media only screen and (min-width:768px) and (max-width:1023px){
+  header{
+    width: 820px;
+  }
+}
+@media only screen and (min-width:1024px) and (max-width:1439px){
+  header{
+    width: 1080px;
+    height: 150px;
+  }
 }
 header.hide {
   transform: translateY(-150px);
@@ -47,6 +67,31 @@ header .logo {
   height: 80px;
   width: 130px;
 }
+@media only screen and (min-width:200px) and (max-width:375px){
+  header .logo{
+    height: 110px;
+    width: 150px;
+  }
+}
+@media only screen and (min-width:375px) and (max-width:430px){
+  header .logo{
+    height: 110px;
+    width: 150px;
+  }
+}
+@media only screen and (min-width:1026px) and (max-width:1439px){
+  header .logo{
+    height: 110px;
+    width: 150px;
+  }
+}
+
+@media only screen and (min-width:1026px) and (max-width:1439px){
+  header .logo{
+    height: 110px;
+    width: 150px;
+  }
+}
 
 header .navigation {
   display: flex;
@@ -56,6 +101,44 @@ header .navigation {
   height: 60px;
   text-decoration: none;
   color: #726b6b;
+}
+@media only screen and (min-width:200px) and (max-width:375px){
+header .home{
+  position: relative;left: 30px;
+}
+
+header .Selling{
+  display: none;
+}
+header .Rated{
+  display: none;
+}
+header .women,.men,.Contact,.About{
+  position: relative;right: 80px;
+}
+}
+@media only screen and (min-width:200px) and (max-width:375px){
+  header .navigation{
+    position: relative;
+    top: 60px;
+  }
+}
+@media only screen and (min-width:375px) and (max-width:430px){
+  header .navigation{
+    position: relative;
+    top: 40px;
+  }
+}
+/*@media only screen and (min-width:768px) and (max-width:1024px){
+  header .navigation{
+  }
+}*/
+
+@media only screen and (min-width:1026px) and (max-width:1439px){
+  header .navigation{
+    position: relative;
+    top: 40px;
+  }
 }
 
 header .navigation a {
@@ -77,6 +160,75 @@ header .navigation a:active{
   text-decoration: none;
   border: solid;
   border-color: #333;
+}
+
+.women{
+  display: block;
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+}
+.women li{
+  display: none;
+}
+.women:hover{
+  position: absolute;
+  right: 43%;
+  justify-items: center;
+  font-weight: bolder;
+  font-size: 18px;
+  color: white;
+  cursor: pointer;
+  background:radial-gradient(rgba(169, 169, 169, 0.075),rgba(211, 211, 211, 0.541)) ;
+  padding: 5px 10px;
+  border-radius: 10px;
+  /*transition: 0.3s all ease-in;*/
+}
+.women:hover  li{
+  position: relative;
+  top: 10px;
+  justify-content: center;
+  transition: 0.4s all ease-in-out;
+  cursor: pointer;
+  color: white;
+  background:radial-gradient(rgba(169, 169, 169, 0.075),rgba(211, 211, 211, 0.541)) ;
+  display: block;
+  padding: 5px 10px;
+  border-radius: 10px;
+}
+
+.men{
+  display: block;
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+}
+.men li{
+  display: none;
+}
+.men:hover{
+  position: absolute;
+  justify-items: center;
+  right: 30%;
+  font-weight: bolder;
+  font-size: 18px;
+  color: white;
+  cursor: pointer;
+  background:radial-gradient(rgba(169, 169, 169, 0.075),rgba(211, 211, 211, 0.541)) ;
+  padding: 5px 10px;
+  border-radius: 10px;
+  /*transition: 0.3s all ease-in;*/
+}
+.men:hover li{
+  position: relative;
+  top: 10px;
+  display: block;
+  transition: 0.4s all ease-in-out;
+  cursor: pointer;
+  color: white;
+  background:radial-gradient(rgba(169, 169, 169, 0.075),rgba(211, 211, 211, 0.541)) ;
+  padding: 5px 10px;
+  border-radius: 10px;
 }
 .home{
   background:radial-gradient(rgba(211, 211, 211, 0.541),rgba(169, 169, 169, 0.075)) ;
@@ -229,11 +381,38 @@ header .info{
   border-radius: 20px;
   margin-bottom: 80px;
 }
+@media only screen and (min-width:200px) and (max-width:375px){
+  .background-video video{
+    height: 680px;
+    width: 740px;
+  }
+}
+@media only screen and (min-width:375px) and (max-width:430px){
+  .background-video video{
+    width: 780px;
+  }
+}
+@media only screen and (min-width:450px) and (max-width:768px){
+  .background-video video{
+    width: 820px;
+  }
+}
+@media only screen and (min-width:768px) and (max-width:1023px){
+  .background-video video{
+    height: 680px;
+   width: 820px;
+  }
+}
+@media only screen and (min-width:1024px) and (max-width:1439px){
+  .background-video video{
+    height: 680px;
+   width: 1080px;
+  }
+}
 
 /* Products Section */
 .products-section {
   margin: 80px 5% 100px 5%;
-  height: 1000px;
   text-align: left;
   padding: 40px 0;
   justify-content: center;
@@ -314,6 +493,75 @@ header .info{
   right: 10px;
   color: #ffd700;
 }
+@media only screen and (min-width:200px) and (max-width:375px){
+  .products-section{
+    width: 740px;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  .products{
+    flex-wrap: wrap;
+   width: 100%;
+  }
+  .product {
+    height: 370px;
+    width: 42%;
+  }
+}
+@media only screen and (min-width:375px) and (max-width:430px){
+  .products-section{
+    width: 780px;
+    margin-left: 0%;
+    margin-right: 0%;
+  }
+  .products{
+    flex-wrap: wrap;
+   width: 100%;
+  }
+  .product {
+    height: 370px;
+    width: 42%;
+  }
+}
+@media only screen and (min-width:450px) and (max-width:769px){
+  .products-section{
+    width: 1fr;
+    
+  }
+  .products{
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  .product {
+    height: 280px;
+    width: 30%;
+  }
+}
+@media only screen and (min-width:768px) and (max-width:1023px){
+  .products-section{
+    width: 820px;
+    margin-left: 0%;
+    margin-right: 0%;
+  }
+}
+@media only screen and (min-width:1024px) and (max-width:1439px){
+  .products-section{
+    width: 1080px;
+    margin-left: 0%;
+    margin-right: 0%;
+    
+  }
+  .products{
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  .product {
+    height: 350px;
+    width: 20%;
+  }
+}
+
+
 .fashionwomen{
   height: 600px;
   width: 80%;
