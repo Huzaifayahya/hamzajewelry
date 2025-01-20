@@ -44,14 +44,14 @@ header {
     width: 770px;
   }
 }
-@media only screen and (min-width:768px) and (max-width:1023px){
+@media only screen and (min-width:768px) and (max-width:1024px){
   header{
     width: 820px;
   }
 }
 @media only screen and (min-width:1024px) and (max-width:1439px){
   header{
-    width: 1080px;
+    width: 1278px;
     height: 150px;
   }
 }
@@ -88,8 +88,8 @@ header .logo {
 
 @media only screen and (min-width:1026px) and (max-width:1439px){
   header .logo{
-    height: 110px;
-    width: 150px;
+    height: 90px;
+    width: 130px;
   }
 }
 
@@ -137,7 +137,7 @@ header .women,.men,.Contact,.About{
 @media only screen and (min-width:1026px) and (max-width:1439px){
   header .navigation{
     position: relative;
-    top: 40px;
+    top: 10px;
   }
 }
 
