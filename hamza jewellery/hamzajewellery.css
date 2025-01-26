@@ -432,6 +432,14 @@ header .info{
   justify-content: space-evenly;
 }
 
+.products{
+  display: flex;
+  justify-content: space-evenly;
+  gap: 60px 0px;
+  flex-wrap: wrap;
+}
+
+
 .product {
   height: 330px;
   width: 20%;
@@ -460,10 +468,11 @@ header .info{
 }
 
 .product-info {
-  text-align: center;
   color: white;
   text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  text-align: center;
   cursor: pointer;
+  margin-bottom: 40px;
 }
 .product-info :hover{
   transform: scale(1.1);
