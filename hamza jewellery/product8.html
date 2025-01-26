@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hamza Jewellery</title>
-    <link rel="stylesheet" href="product1.css" />
+    <link rel="stylesheet" href="product8.css" />
   </head>
   <body>
     <!-- Sticky Header -->
@@ -17,6 +17,12 @@
             <div class="line"></div>
           </div>
         </div>
+        <div class="info" id="info" >
+          <a href="#"  id="profile"> <img src="user.png"              alt="" class="profile"  title="profile" style="height: 27px; "></a>
+          <a href="#"  id="Wishlist"><img src="heart.png"             alt="" class="Wishlist" title="Wishlist"style="height: 27px; margin-left: 30px;"></a>
+          <a href="#"  id="Cart">    <img src="shopping-cart (1).png" alt="" class="Cart"     title="Cart"    style="height: 27px; margin-left: 30px;"></a>
+        </div>
+  
   
         <!-- Sidebar -->
         <aside class="sidebar" id="sidebar">
@@ -36,50 +42,66 @@
           </ul>
         </aside>
         
-        <img src="hamzajewellery2.png" alt="Hamza Jewellery" class="logo"/><br>
+        <img src="hamzajewellery2.png" alt="Hamza Jewellery" class="logo"/>
           <ul class="navigation" style="text-decoration: none;">
             <li ><a href="hamzajewellery.html" class="home">Home</a></li>
             <li ><a href="#" class="Selling">Top Sellings</a></li>
             <li ><a href="#" class="Rated">Top Rated</a></li>
-            <li ><a href="#" class="Womens">Womens</a></li>
-            <li ><a href="#" class="Men">Men</a></li>
+            <li >
+              <ul id="women" class="women">Womens
+                <li><a href="#">Lockets  </a></li>
+                <li><a href="#">Earrings </a></li>
+                <li><a href="#">Bracelets</a></li>
+                <li><a href="#">Handcuffs</a></li>
+                <li><a href="#">Rings    </a></li>
+             </ul>
+            </li>
+            <li >
+              <ul id="men" class="men">Men
+                <li><a href="#">Neckchains   </a></li>
+                <li><a href="#">Men Handcuffs</a></li>
+                <li><a href="#">Men Bracelets</a></li>
+                <li><a href="#">Watches      </a></li>
+                <li><a href="#">Men Rings    </a></li>
+              </ul>
+            </li>
             <li ><a href="#" class="Contact">Contact us</a></li>
             <li ><a href="#" class="About">About us</a></li>
           </ul>
         </header>
-        <main>
-        <p class="direction"><a href="hamzajewellery.html">Home     </a>&#x2192;
-                             <a href="#">Womens     </a>&#x2192;
-                             <a href="#">Product1     </a>
-        </p>
-          <section style="height: 700px;width: 100%;"><!-- Main image -->
-          <div class="main-image"><img src="8a.jpeg" alt="Cartier Handcuff" class="Product1" title="Cartier Handcuff" ></div>
-          <p><h1 class="name">Love and Nail Cartier handcuff</h1></p><br><br>
-          <p  class="SKU"><strong>SKU#</strong>G-HN-24-409001 -P</p>
-          <p class="instock">In stock</p>
-          <ul class="price"><ul><del style="color: rgba(104, 100, 100, 0.87);"><strong>PKR</strong> 1,999</del></ul>   <ul style="color: rgb(250, 21, 21);"><strong>PKR</strong> 1,399</ul></ul>
-          <p class="off">30% OFF</p>
-          <p class="freeshipping">&#10024; Free Shipping ..!</p>
-          <p class="Love">&#x1F495; LOVE It or Return It !</p>
-          <p class="quantity">Quantity</p>
-          <div class="quantity-box">
-            <button class="minus">-</button>
-            <input type="number" id="quantity" value="1" />
-            <button class="plus">+</button>
-          </div>
-          <button class="addtocart">ADD TO CART</button>
-          <button class="shopnow">Shop Now</button></section>
+      <main>
+        <section style="width: 100%;" class="section"><!-- Main image -->
+            <div class="main-image" id="main-image">
+              <img src="8a.jpeg" alt="Cartier Handcuff" class="Product1" title="Cartier Handcuff" >
+              <!-- Thumbnail images -->
+              <div class="thumbnails" id="thumbnails">
+                <img src="8a.jpeg" alt="Thumbnail 1" class="Thumbnail-1" onclick="changeMainImage(this.src)">
+                <img src="8b.jpeg" alt="Thumbnail 2" class="Thumbnail-2" onclick="changeMainImage(this.src)">
+                <img src="8c.jpeg" alt="Thumbnail 3" class="Thumbnail-3" onclick="changeMainImage(this.src)">
+                <!-- Add more thumbnails here -->
+              </div>
+            </div>
+  
+            <div class="details" id="details">
+              <p><h1 class="name" id="name">Love and Nail Cartier handcuff</h1></p><br><br>
+                <p  class="SKU" id="SKU"><strong>SKU#</strong>G-HN-24-409001 -P</p>
+                <p class="instock" id="instock">In stock</p>
+                <ul class="price" id="price"><ul><del style="color: rgba(104, 100, 100, 0.87);"><strong>PKR</strong> 1,999</del></ul>   <ul style="color: rgb(250, 21, 21);"><strong>PKR</strong> 1,399</ul></ul>
+                <p class="off" id="off">30% OFF</p>
+                <p class="freeshipping" id="freeshipping">&#10024; Free Shipping ..!</p>
+                <p class="Love" id="Love">&#x1F495; LOVE It or Return It !</p>
+                <p class="quantity" id="quantity">Quantity</p>
+                <div class="quantity-box" id="quantity-box">
+                  <button class="minus" id="minus">-</button>
+                  <input type="number" id="quantity-input" value="1" />
+                  <button class="plus" id="plus">+</button>
+                </div>
+                <button class="addtocart" id="addtocart">ADD TO CART</button>
+                <button class="shopnow" id="shopnow">Shop Now</button>
+              </div>
+        </section>
+        
           
-          <!-- Thumbnail images -->
-          <section><div class="thumbnails">
-            <img src="8a.jpeg" alt="Thumbnail 1" class="Thumbnail-1" onclick="changeMainImage(this.src)">
-            <img src="8b.jpeg" alt="Thumbnail 2" class="Thumbnail-2" onclick="changeMainImage(this.src)">
-            <img src="8c.jpeg" alt="Thumbnail 3" class="Thumbnail-3" onclick="changeMainImage(this.src)">
-            <!-- Add more thumbnails here -->
-          </div></section>
-          <hr style="position: relative;top: 5px;">
-          <hr style="position: relative;top: 1280px;">
-
           <div style="height: 1300px;color: black;"><section class="Description">
             <h1 style="color: black;font-family: sans-serif;margin-left: 80px;margin-top: 30px;">Product details for Love and Nail Cartier handcuff</h1>
             <ul style="font-weight: 100;margin-left: 100px;margin-top: 20px;gap: 10px;margin-bottom: 30px;">
@@ -94,8 +116,8 @@
               <li style="margin-bottom: 10px;">Suitable for casual and formal occasions.</li>
             </ul>
             <div style="display: flex;">
-            <img src="8b.jpeg" alt="" style="height: 300px;display: inline-block;margin: 50px;margin-left: 100px;">
-            <img src="8c.jpeg" alt="" style="height: 300px;display: inline-block;margin: 50px;margin-left: 100px;">
+            <img src="8b.jpeg" alt="" style="height: 300px;margin-left: 100px;">
+            <img src="8c.jpeg" alt="" style="height: 300px;margin-left: 100px;">
             </div>
             <h2 style="margin-left: 80px;margin-bottom: 30px;">Best Selling Most Demanding Stainless Steel Gold Bracelet Sets for Girls</h2>
             <p style="margin-left: 90px;margin-bottom:70px ;">Discover the elegance and sophistication of our best-selling stainless steel gold bracelet sets, specially crafted for girls. <br>
@@ -115,8 +137,10 @@
               for everyday wear without the worry of tarnishing or fading.
             </p>
           </section></div><br>
-          <section class="products-section" id="top-selling" style="margin-bottom: 100px;">
-            <h2>Products You May Know</h2>
+          <section class="products-section">
+          <h2>Products You May Know</h2>
+          <section class="products" id="top-selling" style="margin-bottom: 100px;">
+            
             <div class="product">
               <img src="21c.jpeg" alt="Product 3" />
               <div class="product-info">
@@ -145,8 +169,6 @@
                 <p style="margin-top: 10px;"><del style="color: rgba(255, 0, 0, 0.884);margin-right: 20px;">PKR899</del>PKR699</p>
               </div>
             </div>
-      
-            <br><br><br><br><br>
             <div class="product">
               <img src="10c.jpeg" alt="Product 3" />
               <div class="product-info">
@@ -174,7 +196,9 @@
                 <h3>Product 8</h3>
                 <p style="margin-top: 10px;"><del style="color: rgba(255, 0, 0, 0.884);margin-right: 20px;">PKR1299</del>PKR799</p>
               </div>
-            </div></section>
+            </div>
+          </section>
+        </section>
 
           <section class="reviews">
             <table style="height: 300px;width: 100%;text-align: center;">
