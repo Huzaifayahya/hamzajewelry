@@ -1,193 +1,360 @@
 header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
+  position: fixed;
+  width: 100%;
+  height: 150px;
+  background-color: #726b6b;
+  padding-bottom: 20px;
+  z-index: 10;
+  transition: 0.8s all ease-in-out;
+}
+@media only screen and (min-width:200px) and (max-width:375px){
+  header{
+    height: 200px;
+    width: 740px;
+  }
+}
+@media only screen and (min-width:375px) and (max-width:430px){
+  header{
+    height: 190px;
+    width: 780px;
+  }
+}
+@media only screen and (min-width:450px) and (max-width:768px){
+  header{
+    width: 770px;
+  }
+}
+@media only screen and (min-width:768px) and (max-width:1024px){
+  header{
+    width: 820px;
     height: 150px;
-    background-color: #726b6b;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    padding-bottom: 20px;
-    z-index: 10;
-    transition: 0.8s all ease-in-out;
   }
-  header.hide {
-    transform: translateY(-150px);
-    transition: transform 0.3s ease;
+}
+@media only screen and (min-width:1024px) and (max-width:1439px){
+  header{
+    width: 1278px;
+    height: 150px;
   }
-  
-  header .logo {
-    position: absolute;
-    top: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    height: 80px;
-    width: auto;
+}
+header.hide {
+  transform: translateY(-150px);
+  transition: transform 0.3s ease;
+}
+
+header .logo {
+  position: absolute;
+  top: 10px;
+  left: 42%;
+  height: 80px;
+  width: 130px;
+}
+@media only screen and (min-width:200px) and (max-width:375px){
+  header .logo{
+    height: 110px;
+    width: 150px;
   }
-  
-  header .navigation {
-    position: absolute;
-    bottom: 20px;
-    left: 235px;
-    display: flex;
-    justify-content: space-around;
-    gap: 70px;
-    text-decoration: none;
-    color: #726b6b;
+}
+@media only screen and (min-width:375px) and (max-width:430px){
+  header .logo{
+    height: 110px;
+    width: 150px;
   }
-  
-  header .navigation a {
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
+}
+@media only screen and (min-width:1026px) and (max-width:1439px){
+  header .logo{
+    height: 110px;
+    width: 150px;
   }
-  
-  header .navigation a:hover {
-    background:radial-gradient(rgba(169, 169, 169, 0.075),rgba(211, 211, 211, 0.541)) ;
-    padding: 5px 10px;
-    border-radius: 10px;
-    text-decoration: none;
+}
+
+@media only screen and (min-width:1026px) and (max-width:1439px){
+  header .logo{
+    height: 90px;
+    width: 130px;
   }
-  header .navigation a:active{
-    background:radial-gradient(rgba(211, 211, 211, 0.541),rgba(169, 169, 169, 0.075)) ;
-    padding: 8px 14px;
-    border-radius: 10px;
-    text-decoration: none;
-    border: solid;
-    border-color: #333;
+}
+
+header .navigation {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-end;
+  width: 100%;
+  height: 70px;
+  text-decoration: none;
+  color: #726b6b;
+}
+header .navigation li{
+text-decoration: none;
+}
+@media only screen and (min-width:200px) and (max-width:375px){
+header .home{
+  position: relative;left: 30px;
+}
+
+header .Selling{
+  display: none;
+}
+header .Rated{
+  display: none;
+}
+header .women,.men,.Contact,.About{
+  position: relative;right: 80px;
+}
+}
+@media only screen and (min-width:200px) and (max-width:375px){
+  header .navigation{
+    position: relative;
+    top: 60px;
   }
-  .Rated{
-    background:radial-gradient(rgba(211, 211, 211, 0.541),rgba(169, 169, 169, 0.075)) ;
-    padding: 8px 14px;
-    border-radius: 10px;
-    text-decoration: none;
-    border: solid;
-    border-color: #333;
+}
+@media only screen and (min-width:375px) and (max-width:430px){
+  header .navigation{
+    position: relative;
+    top: 40px;
   }
-  
-  body {
-    font-family: Arial, sans-serif;
-    overflow-x: hidden;
+}
+/*@media only screen and (min-width:768px) and (max-width:1024px){
+  header .navigation{
   }
-  
-  /* Menu Icon Styling */
-  .menu-container {
-    position: absolute;
-    top: 30px;
-    left: 20px;
-    cursor: pointer;
-    z-index: 1001;
-    display: inline-block;
+}*/
+
+@media only screen and (min-width:1026px) and (max-width:1439px){
+  header .navigation{
+    position: relative;
+    top: 10px;
   }
-  
-  .menu {
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-  }
-  
-  .line {
-    width: 30px;
-    height: 3px;
-    background-color: #333;
-    transition: all 0.3s ease;
-  }
-  
-  /* Sidebar Styling */
-  .sidebar {
-    position: fixed;
-    top: 0;
-    left: -250px;
-    width: 250px;
-    height: 100%;
-    background-color: #333;
-    opacity: 80%;
-    padding: 20px;
-    transition: all 0.3s ease;
-    z-index: 1000;
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .sidebar ul {
-    list-style-type: none;
-  }
-  
-  .sidebar li {
-    margin: 20px 0;
-  }
-  
-  .sidebar a {
-    text-decoration: none;
-    color: white;
-    font-size: 18px;
-    display: block;
-    padding: 10px;
-    transition: background-color 0.3s ease;
-  }
-  
-  .sidebar a:hover {
-    background-color: #4caf50;
-  }
-  
-  /* Hover Effect to Open Sidebar */
-  .menu-container:hover ~ .sidebar {
-    left: 0;
-  }
-  
-  /* Smooth Transition for Sidebar Opening */
-  .sidebar.open {
-    left: 0;
-  }
-  
-  /* Hover Effect on Menu Icon */
-  .menu-container:hover .line {
-    transform: scaleX(1.2);
-    background-color: #4caf50; /* Change to green on hover */
-  }
-  
-  .menu-container:hover {
-    transform: scale(1.2);
-    background-color: rgba(255, 255, 255, 0.2); /* Background translucent */
-  }
-  /* Logout Box Styling */
-  a.logout-box {
-    display: flex;
-    align-items: center; /* Aligns items vertically in the center */
-    gap: 10px; /* Adds space between the icon and text */
-    background-color: #333;
-    color: white;
-    padding: 10px 20px;
-    border-radius: 30px;
-    text-decoration: none; /* Remove underline from link */
-    transition: background-color 0.3s ease;
-  }
-  
-  /* Icon Styling */
-  .logout-box i {
-    font-size: 24px; /* Icon size */
-  }
-  
-  /* Text Styling */
-  .logout-box .logout-text {
-    font-size: 16px; /* Text size smaller than icon */
-  }
-  
-  /* Hover Effect for Logout Box */
-  a.logout-box:hover {
-    background-color: #4caf50; /* Change background color on hover */
-  }
-  .profile:hover{
-    box-sizing: border-box;
-    background-color: #7a7a7a;border-radius: 50%;
-  }
-  .Wishlist:hover{
-    background-color: #7a7a7a;border-radius: 50%;
-  }
-  .Cart:hover{
-    background-color: #7a7a7a;border-radius: 50%;
-  }
+}
+
+header .navigation a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+header .navigation a:hover {
+  background:radial-gradient(rgba(169, 169, 169, 0.075),rgba(211, 211, 211, 0.541)) ;
+  padding: 5px 10px;
+  border-radius: 10px;
+  text-decoration: none;
+}
+header .navigation a:active{
+  background:radial-gradient(rgba(211, 211, 211, 0.541),rgba(169, 169, 169, 0.075)) ;
+  padding: 8px 14px;
+  border-radius: 10px;
+  text-decoration: none;
+  border: solid;
+  border-color: #333;
+}
+
+.women{
+  display: block;
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+}
+.women li{
+  display: none;
+}
+.women:hover{
+  position: absolute;
+  right: 43%;
+  justify-items: center;
+  font-weight: bolder;
+  font-size: 18px;
+  color: white;
+  cursor: pointer;
+  background:radial-gradient(rgba(169, 169, 169, 0.075),rgba(211, 211, 211, 0.541)) ;
+  padding: 5px 10px;
+  border-radius: 10px;
+  /*transition: 0.3s all ease-in;*/
+}
+.women:hover  li{
+  position: relative;
+  top: 10px;
+  justify-content: center;
+  transition: 0.4s all ease-in-out;
+  cursor: pointer;
+  color: white;
+  background:radial-gradient(rgba(169, 169, 169, 0.075),rgba(211, 211, 211, 0.541)) ;
+  display: block;
+  padding: 5px 10px;
+  border-radius: 10px;
+}
+
+.men{
+  display: block;
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+}
+.men li{
+  display: none;
+}
+.men:hover{
+  position: absolute;
+  justify-items: center;
+  right: 30%;
+  font-weight: bolder;
+  font-size: 18px;
+  color: white;
+  cursor: pointer;
+  background:radial-gradient(rgba(169, 169, 169, 0.075),rgba(211, 211, 211, 0.541)) ;
+  padding: 5px 10px;
+  border-radius: 10px;
+  /*transition: 0.3s all ease-in;*/
+}
+.men:hover li{
+  position: relative;
+  top: 10px;
+  display: block;
+  transition: 0.4s all ease-in-out;
+  cursor: pointer;
+  color: white;
+  background:radial-gradient(rgba(169, 169, 169, 0.075),rgba(211, 211, 211, 0.541)) ;
+  padding: 5px 10px;
+  border-radius: 10px;
+}
+.home{
+  background:radial-gradient(rgba(211, 211, 211, 0.541),rgba(169, 169, 169, 0.075)) ;
+  padding: 8px 14px;
+  border-radius: 10px;
+  text-decoration: none;
+  border: solid;
+  border-color: #333;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  overflow-x: hidden;
+}
+
+/* Menu Icon Styling */
+.menu-container {
+  position: absolute;
+  top: 30px;
+  left: 20px;
+  cursor: pointer;
+  z-index: 1001;
+  display: inline-block;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.line {
+  width: 30px;
+  height: 3px;
+  background-color: #333;
+  transition: all 0.3s ease;
+}
+
+/* Sidebar Styling */
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  left: -22%;
+  width: 18%;
+  height: 100%;
+  background-color: #333;
+  opacity: 80%;
+  padding: 20px;
+  transition: all 0.3s ease;
+  z-index: 100;
+
+}
+
+.sidebar ul {
+  list-style-type: none;
+}
+
+.sidebar li {
+  margin: 20px 0;
+}
+
+.sidebar a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  display: block;
+  padding: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.sidebar a:hover {
+  background-color: #4caf50;
+  transform: scale(1.2);
+  transition: 0.3s all ease-in-out;
+}
+
+/* Hover Effect to Open Sidebar */
+.menu-container:hover ~ .sidebar {
+  left: 0;
+}
+
+/* Smooth Transition for Sidebar Opening */
+.sidebar.open {
+  left: 0;
+}
+
+/* Hover Effect on Menu Icon */
+.menu-container:hover .line {
+  transform: scaleX(1.2);
+  background-color: #4caf50; /* Change to green on hover */
+}
+
+.menu-container:hover {
+  transform: scale(1.2);
+  background-color: rgba(255, 255, 255, 0.2); /* Background translucent */
+}
+/* Logout Box Styling */
+a.logout-box {
+  display: flex;
+  align-items: center; /* Aligns items vertically in the center */
+  gap: 10px; /* Adds space between the icon and text */
+  background-color: #333;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 30px;
+  text-decoration: none; /* Remove underline from link */
+  transition: background-color 0.3s ease;
+}
+
+/* Icon Styling */
+.logout-box i {
+  font-size: 24px; /* Icon size */
+}
+
+/* Text Styling */
+.logout-box .logout-text {
+  font-size: 16px; /* Text size smaller than icon */
+}
+
+/* Hover Effect for Logout Box */
+a.logout-box:hover {
+  background-color: #4caf50; /* Change background color on hover */
+}
+header .info{
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 10px;
+  margin-right: 20px;
+}
+.profile:hover{
+  box-sizing: border-box;
+  background-color: #7a7a7a;border-radius: 50%;
+}
+.Wishlist:hover{
+  background-color: #7a7a7a;border-radius: 50%;
+}
+.Cart:hover{
+  background-color: #7a7a7a;border-radius: 50%;
+}
+
 /* Body */
 body {
     font-family: Arial, sans-serif;
